@@ -6,3 +6,7 @@ if you find any kind of difficulty in this project then contact me on the linked
 
 put all the given song into a one folder and name that folder is :- Songs
 
+===> python version :- 3.9.7 ( to check the version run thi s commmand in terminal "conda list python or python -V" )
+===> keras version :- 2.11.0  ( "conda list python" )
+===> playsound version :- 1.2.2  ( "conda list python" )
+
