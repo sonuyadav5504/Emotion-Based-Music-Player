@@ -10,3 +10,11 @@ put all the given song into a one folder and name that folder is :- Songs
 ===> keras version :- 2.11.0  ( "conda list python" )
 ===> playsound version :- 1.2.2  ( "conda list python" )
 
+library need to be installed ==>>
+  tensorflow
+  keras
+  opencv -python
+  playsound
+  pygame
+  tkinter
+
