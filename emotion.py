@@ -6,7 +6,6 @@ from pygame import mixer
 
 import numpy as np
 import argparse
-# import matplotlib.pyplot as plt
 import cv2
 from playsound import playsound
 import time
@@ -69,30 +68,18 @@ def AddMusic():
             break
     print("Hey!")
     print("currently your emotion is :~~ " + p + "~~.")
-    print("Now Music is playing within 2 sec :----> ")
 
     cap.release()
     cv2.destroyAllWindows()
-    time.sleep(2)
 
     # #play music
     # music=playsound(p+".mp3")
     Playlist.insert(0, 'Songs/'+p+'.mp3')
 
-    # path = filedialog.askdirectory()
-    # if path:
-    #     os.chdir(path)
-    #     songs = os.listdir(path)
-
-    #     for song in songs:
-    #         if song.endswith(".mp3"):
-    #             Playlist.insert(END, song)
-
-
 def PlayMusic():
-    Music_Name = Playlist.get(ACTIVE)
+    Music_Name = Playlist.get(0)
     print(Music_Name[0:-4])
-    mixer.music.load(Playlist.get(ACTIVE))
+    mixer.music.load(Playlist.get(0))
     mixer.music.play()
 
 
